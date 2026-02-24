@@ -1,0 +1,12 @@
+# Chặn thư mục môi trường ảo (bắt buộc)
+venv/
+.venv/
+env/
+
+# Chặn các file rác của Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Chặn file cấu hình bảo mật (không được up mật khẩu lên Git)
+.env
