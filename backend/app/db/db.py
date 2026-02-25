@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql+psycopg://app:app@localhost:5432/appdb"
+    "postgresql+psycopg://postgres:123456@localhost:5432/pythonweb_db"
 )
 
 engine = create_engine(DATABASE_URL, pool_pre_ping=True)

@@ -3,9 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 
-from .db import Base, engine, get_db
-from .models import Post
-from .schemas import PostCreate, PostOut
+from app.db.db import Base, engine, get_db
+from app.models.models import Post
+from app.schemas.schemas import PostCreate, PostOut
 
 app = FastAPI(title="MyApp API")
 
