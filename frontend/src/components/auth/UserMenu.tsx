@@ -50,20 +50,6 @@ export default function UserMenu() {
               >
                 Dashboard
               </Link>
-
-              <Link
-                className="block px-4 py-3 hover:bg-zinc-50"
-                to="/admin/products/create"
-              >
-                Tạo sản phẩm
-              </Link>
-
-              <Link
-                className="block px-4 py-3 hover:bg-zinc-50"
-                to="/admin/categories/create"
-              >
-                Tạo category
-              </Link>
             </>
           )}
 
