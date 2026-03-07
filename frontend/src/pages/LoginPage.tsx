@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { loginApi } from "../api/authApi";
 import { saveToken } from "../utils/auth";
 import { getApiErrorDetail } from "../utils/error";
+import "../assets/css/auth.css";
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export default function LoginPage() {
     try {
       const data = await loginApi({ email, password });
       saveToken(data.access_token);
-      navigate("/products");
+      navigate("/");
     } catch (err: unknown) {
       setError(getApiErrorDetail(err) ?? "Đăng nhập thất bại");
     } finally {

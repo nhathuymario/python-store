@@ -8,7 +8,9 @@ export function getApiErrorDetail(error: unknown): string | null {
       return detail;
     }
 
-    return error.message;
+    if (error.message) {
+      return error.message;
+    }
   }
 
   if (error instanceof Error) {

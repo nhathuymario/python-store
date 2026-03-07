@@ -1,0 +1,100 @@
+/* LOGIN PAGE */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0a0a, #2b2b2b);
+  padding: 20px;
+}
+
+/* CARD */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+}
+
+/* TITLE */
+
+.auth-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* INPUT */
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #e11d48;
+}
+
+/* BUTTON */
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #e11d48;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #be123c;
+}
+
+.auth-submit {
+  margin-top: 10px;
+}
+
+/* MESSAGE */
+
+.message {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.message-error {
+  background: #fee2e2;
+  color: #991b1b;
+}

@@ -46,17 +46,12 @@ export default function ProductGrid({ products, onAddToCart }: Props) {
                   alt={product.name}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
-                {!product.is_active && (
-                  <span className="absolute left-3 top-3 rounded-full bg-zinc-700 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
-                    Ẩn
-                  </span>
-                )}
               </div>
             </Link>
 
             <div className="p-4">
               <Link to={`/products/${product.slug}`}>
-                <h3 className="line-clamp-2 text-sm font-semibold leading-6 text-zinc-900 md:text-base hover:text-red-600">
+                <h3 className="line-clamp-2 text-sm font-semibold leading-6 text-zinc-900 hover:text-red-600 md:text-base">
                   {product.name}
                 </h3>
               </Link>
