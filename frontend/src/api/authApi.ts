@@ -23,3 +23,8 @@ export const loginApi = async (payload: LoginPayload) => {
 
   return res.data;
 };
+
+export const getMeApi = async () => {
+  const res = await axiosClient.get("/auth/me");
+  return res.data;
+};

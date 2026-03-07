@@ -46,6 +46,13 @@ export default function UserMenu() {
             <>
               <Link
                 className="block px-4 py-3 hover:bg-zinc-50"
+                to="/admin/dashboard"
+              >
+                Dashboard
+              </Link>
+
+              <Link
+                className="block px-4 py-3 hover:bg-zinc-50"
                 to="/admin/products/create"
               >
                 Tạo sản phẩm
@@ -65,6 +72,7 @@ export default function UserMenu() {
             className="block w-full px-4 py-3 text-left hover:bg-zinc-50"
             onClick={() => {
               logout();
+              localStorage.removeItem("is_admin");
               navigate("/");
             }}
           >
