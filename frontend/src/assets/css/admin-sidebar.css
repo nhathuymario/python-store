@@ -1,0 +1,244 @@
+.admin-sidebar {
+  width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1220 0%, #0a1020 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 16px 18px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  box-sizing: border-box;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 6px 8px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.28);
+}
+
+.brand-text {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.workspace-card {
+  background: rgba(12, 21, 38, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 18px;
+  padding: 14px 14px 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.workspace-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.workspace-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.workspace-main strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.workspace-arrow {
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 14px 16px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.sidebar-link.active {
+  background: linear-gradient(90deg, #5b5cf0 0%, #6f5ef7 100%);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+}
+
+.sidebar-link-icon {
+  width: 22px;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.promo-card {
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  padding-top: 16px;
+}
+
+.promo-title {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.promo-text {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.promo-illustration {
+  background: linear-gradient(180deg, #14203a 0%, #101a30 100%);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 22px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.promo-window {
+  background: linear-gradient(180deg, #3b82f6 0%, #6366f1 50%, #8b5cf6 100%);
+  border-radius: 18px;
+  padding: 12px;
+}
+
+.promo-dots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.promo-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.promo-box {
+  min-height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.promo-box.big {
+  grid-column: span 2;
+  min-height: 44px;
+}
+
+.promo-box.wide {
+  grid-column: span 3;
+  min-height: 26px;
+}
+
+.promo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: linear-gradient(90deg, #5856eb, #6d5ef5);
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.promo-btn:hover {
+  transform: translateY(-2px);
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 18px;
+  padding: 12px;
+}
+
+.sidebar-user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #111827, #000000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.sidebar-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-user-info strong {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.sidebar-user-info span {
+  font-size: 13px;
+  color: #94a3b8;
+}
